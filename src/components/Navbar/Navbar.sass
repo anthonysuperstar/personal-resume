@@ -1,0 +1,63 @@
+.nb
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    gap: 5vh
+    position: relative
+
+    nav
+        display: flex
+        flex-direction: column
+        align-items: center
+        gap: 1.5rem
+        
+
+        a
+            color: white
+            text-decoration: none
+            font-size: 2em
+            transition: .6s
+            &:hover
+                color: red
+
+.greet
+    font-size: 1.5em
+    color: red
+    border: 2px solid red
+    padding: 1rem
+    transition: .6s
+    // user-select: none
+
+.stack
+    color: white
+    font-size: 2em
+
+footer
+    position: absolute
+    bottom: 10vh
+    a
+        color: white
+
+.lang
+    cursor: pointer !important
+
+.lang-switch
+    position: absolute
+    right: 30px
+    top: 10px
+    z-index: 1
+
+.nav
+    scroll-behavior: smooth !important
+
+.n-active
+    text-decoration: underline
+    text-decoration-color: red
+
+.na-li
+    cursor: pointer
+    transition: .1s
+    &:hover
+        transform: scale(1.05)

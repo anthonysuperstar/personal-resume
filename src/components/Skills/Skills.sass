@@ -1,0 +1,100 @@
+#skills
+    flex-direction: column !important
+    gap: 3vh
+
+.s-row
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 5vw
+    // background-color: orange
+    height: 50%
+    width: 100%
+
+.s-col
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40%
+    height: 85%
+    cursor: pointer
+    border: 5px solid white
+    border-radius: 16px
+    background-size: 50%
+    background-position: center
+    background-repeat: no-repeat
+    p
+        font-size: 6em
+
+.s-row:first-child
+    .s-col:nth-child(1)
+        background-image: url("../../img/skill.png")
+    .s-col:nth-child(2)
+        background-image: url("../../img/technical-support.png")
+
+.s-row:last-child
+    .s-col
+        background-image: url("../../img/speak.png")
+
+#softskills, #hardskills, #languages
+    position: relative
+
+.softskill-list
+    ul
+        display: flex
+        justify-content: center
+        gap: 10vw
+        list-style-type: none
+    .part
+        display: flex
+        flex-direction: column
+        gap: 4vh
+        li
+            font-size: 2em
+            transition: .5s
+            user-select: none
+            &:hover
+                color: red
+
+#hardskills
+    .hs-container
+        display: flex
+        gap: 5vw
+    .hardskill-element
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 2vw
+    .hs-col
+        display: flex
+        flex-direction: column
+        gap: 2vh
+    .hardskill-name
+        font-size: 1.4em
+
+#languages
+    .hs-container
+        display: flex
+        flex-direction: column
+        gap: 5vw
+    .hardskill-element
+        display: flex
+        justify-content: space-between
+        align-items: center
+        gap: 2vw
+    .hs-col
+        display: flex
+        flex-direction: column
+        gap: 2vh
+    .hardskill-name
+        font-size: 1.4em
+
+.hardskill-element
+    position: relative
+
+.ss-prev
+    font-size: 2em
+    position: absolute
+    top: 50px
+    left: 50px
+    cursor: pointer

@@ -1,0 +1,41 @@
+#background
+    position: relative
+    justify-content: space-around !important
+    .b-col
+        cursor: pointer
+        user-select: none
+        height: 50%
+        width: 40%
+        display: flex
+        justify-content: center
+        align-items: center
+        // background-color: green
+        border: 5px solid white
+        border-radius: 16px
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 60%
+        p
+            font-size: 5em
+    .b-academic
+        background-image: url("../../img/student.png")
+    .b-professional
+        background-image: url("../../img/work.png")
+    .education-schoolname
+        font-style: italic
+
+#academic
+    .ac-container
+        display: flex
+        flex-direction: column
+        gap: 5vh
+        border: 5px solid white
+        border-radius: 16px
+        .education-container
+            text-align: center
+            padding: 2vh 2vw
+            border-collapse: collapse
+            &:last-child, &:nth-child(2), &:nth-child(3)
+                border-top: 5px solid white
+        .education-namedegree
+            color: red
