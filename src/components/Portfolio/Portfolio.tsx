@@ -28,7 +28,7 @@ class Project{
 
     public display(){
         return(
-            <a href={this.url} target="_blank" rel="noreferrer" className="project">
+            <a href={this.url} target="_blank" rel="noreferrer" key={this.name} className="project">
                 <p>{this.name} ({this.techDisplay()})</p>
                 <div>
                     <img className="project-img" src={this.imgPath} alt="" />

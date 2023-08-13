@@ -95,10 +95,10 @@ export default function Navbar(){
     }
     
     const en_mapped = content.en.map((link) => {
-        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link> 
+        return <Link className="na-li" to={link.link} key={link.name} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link> 
     })
     const fr_mapped = content.fr.map((link) => {
-        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link>
+        return <Link className="na-li" to={link.link} key={link.name} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link>
     })
 
     return (

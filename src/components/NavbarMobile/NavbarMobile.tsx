@@ -5,8 +5,12 @@ import { Link } from "react-scroll"
 import { GrLinkedinOption } from 'react-icons/gr'
 import { FaSoundcloud } from 'react-icons/fa'
 import { BsGithub } from 'react-icons/bs'
+import { useState } from "react"
+import burger from '../../img/bar.png'
+import cross from '../../img/fermer.png'
 
 export default function NavbarMobile(){
+    const [visible, setVisible] = useState(false)
     const language = useSelector((state: any) => state.language.value)
     const dispatch = useDispatch()
 
@@ -20,9 +24,15 @@ export default function NavbarMobile(){
         console.log(language)
     }
 
+    const handleClickMenu = () => {
+        !visible? setVisible(true) : setVisible(false)
+    }
+
     return(
         <div className="nav-mobile">
-            NAVMOBILE
+            <div className="burger-icon">
+                <img src={!visible? burger : cross} onClick={handleClickMenu} alt="" />
+            </div>
         </div>
     )
 }

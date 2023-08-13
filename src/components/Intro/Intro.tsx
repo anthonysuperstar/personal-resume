@@ -46,7 +46,7 @@ export default function Intro(){
 
     const paragraphs_mapped_en = content.en.paragraphs.map((element) => {
         return (
-            <div className="i-cat">
+            <div className="i-cat" key={element.cat}>
                 <p className="i-head">{element.cat}</p>
                 <p>{element.paragraph}</p>
             </div>
@@ -54,7 +54,7 @@ export default function Intro(){
     }) 
     const paragraphs_mapped_fr = content.fr.paragraphs.map((element) => {
         return (
-            <div className="i-cat">
+            <div className="i-cat" key={element.cat}>
                 <div className="i-head">{element.cat}</div>
                 <p>{element.paragraph}</p>
             </div>
