@@ -61,6 +61,10 @@ export default function Navbar(){
                 link: "portfolio",
                 name: "Portfolio"
             },
+            {
+                link: "resume",
+                name: "Resume"
+            }
         ],
         fr: [
             {
@@ -83,6 +87,10 @@ export default function Navbar(){
                 link: "portfolio",
                 name: "Portfolio"
             },
+            {
+                link: "resume",
+                name: "CV"
+            }
         ]
     }
     
@@ -109,7 +117,6 @@ export default function Navbar(){
                 </motion.div>
                 <nav className="nav">
                     {language==="en"? en_mapped : fr_mapped}
-                    <a className="na-li" href={process.env.PUBLIC_URL + 'resume/CV-billAnthony.pdf'} download>Get My Resume</a>
                 </nav>
                 <motion.footer>
                     <motion.span whileHover={{rotate: 5, scale: 1.2}}>

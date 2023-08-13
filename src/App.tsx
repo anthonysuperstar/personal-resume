@@ -4,6 +4,7 @@ import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
 import NavbarMobile from './components/NavbarMobile/NavbarMobile';
 import Portfolio from './components/Portfolio/Portfolio';
+import Resume from './components/Resume/Resume';
 import Skills from './components/Skills/Skills';
 import Welcome from './components/Welcome/Welcome';
 
@@ -25,6 +26,7 @@ export default function App() {
         <Skills />
         <Background />
         <Portfolio />
+        <Resume />
       </main>
     </div>
   );
