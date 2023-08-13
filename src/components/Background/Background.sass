@@ -24,6 +24,14 @@
     .education-schoolname
         font-style: italic
 
+    .ba-container
+        height: 100%
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 8vw
+
 #academic
     .ac-container
         display: flex
@@ -55,3 +63,17 @@
             height: 20%
             p
                 font-size: 1.8em
+
+@media screen and (max-width: 410px)
+    .ba-container
+        flex-direction: column
+    #background
+        .b-col
+            width: 80%
+            height: 40%
+    #academic
+        .ac-container
+            border: none
+        .education-container
+            &:last-child, &:nth-child(2), &:nth-child(3)
+                border-top: none

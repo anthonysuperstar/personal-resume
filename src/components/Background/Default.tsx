@@ -15,13 +15,13 @@ export default function Default(){
     }
 
     return(
-        <>
+        <div className="ba-container">
             <motion.div whileHover={{scale: 1.05}} whileTap={{scale: .8}} className="b-col b-academic" onClick={toAcademic}>
                 <p>{language_state==="en"? "Education" : "Scolarité"}</p>
             </motion.div>
             <motion.div whileHover={{scale: 1.05}} whileTap={{scale: .8}} className="b-col b-professional" onClick={toProfessional}>
                 <p>{language_state==="en"? "Professional" : "Professionnel"}</p>
             </motion.div>
-        </>
+        </div>
     )
 }
