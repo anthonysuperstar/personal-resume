@@ -6,17 +6,16 @@
         text-align: center
         width: 80%
         margin: 0
-        font-size: 1.4em
+        font-size: 1.4rem
     h4
         color: red
-        font-size: 2.5em
+        font-size: 2.5rem
         margin: 0
     h2
         margin: 0
-        font-size: 3em
+        font-size: 3rem
     .i-head
         color: red
-    
 
 .i-cat
     display: flex
@@ -25,4 +24,20 @@
     align-items: center
     text-align: justify
     gap: 1vh
+
+@media screen and (max-width: 1000px)
+    #intro
+        h2
+            font-size: 2.5em
+        h4
+            font-size: 2em
+@media screen and (max-width: 800px)
+    #intro
+        h2
+            font-size: 1.8em
+        h4
+            font-size: 1.3em
+        p
+            width: 95%
+            font-size: 1.1em
 

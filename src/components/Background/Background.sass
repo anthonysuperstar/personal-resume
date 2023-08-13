@@ -4,8 +4,8 @@
     .b-col
         cursor: pointer
         user-select: none
-        height: 50%
-        width: 40%
+        height: 40%
+        width: 30%
         display: flex
         justify-content: center
         align-items: center
@@ -16,7 +16,7 @@
         background-position: center
         background-size: 60%
         p
-            font-size: 5em
+            font-size: 4rem
     .b-academic
         background-image: url("../../img/student.png")
     .b-professional
@@ -39,3 +39,19 @@
                 border-top: 5px solid white
         .education-namedegree
             color: red
+
+@media screen and (max-width: 1550px)
+    #background
+        .b-col
+            width: 30%
+            height: 40%
+            p
+                font-size: 2.5em
+
+@media screen and (max-width: 800px)
+    #background
+        .b-col
+            width: 30%
+            height: 20%
+            p
+                font-size: 1.8em

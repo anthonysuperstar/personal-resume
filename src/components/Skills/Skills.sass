@@ -1,6 +1,6 @@
 #skills
     flex-direction: column !important
-    gap: 3vh
+    padding: 20px
 
 .s-row
     display: flex
@@ -15,8 +15,8 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 40%
-    height: 85%
+    width: 30%
+    height: 75%
     cursor: pointer
     border: 5px solid white
     border-radius: 16px
@@ -24,7 +24,7 @@
     background-position: center
     background-repeat: no-repeat
     p
-        font-size: 6em
+        font-size: 5rem
 
 .s-row:first-child
     .s-col:nth-child(1)
@@ -56,41 +56,24 @@
             &:hover
                 color: red
 
-#hardskills
-    .hs-container
-        display: flex
-        gap: 5vw
-    .hardskill-element
-        display: flex
-        justify-content: space-between
-        align-items: center
-        gap: 2vw
-    .hs-col
-        display: flex
-        flex-direction: column
-        gap: 2vh
-    .hardskill-name
-        font-size: 1.4em
 
-#languages
-    .hs-container
-        display: flex
-        flex-direction: column
-        gap: 5vw
-    .hardskill-element
-        display: flex
-        justify-content: space-between
-        align-items: center
-        gap: 2vw
-    .hs-col
-        display: flex
-        flex-direction: column
-        gap: 2vh
-    .hardskill-name
-        font-size: 1.4em
-
+.hs-container
+    display: flex
+    gap: 5vw
 .hardskill-element
+    display: flex
     position: relative
+    justify-content: space-between
+    align-items: center
+    gap: 2vw
+.hs-col
+    display: flex
+    flex-direction: column
+    gap: 2vh
+.hardskill-name
+    font-size: 1.4em
+
+
 
 .ss-prev
     font-size: 2em
@@ -98,3 +81,28 @@
     top: 50px
     left: 50px
     cursor: pointer
+
+@media screen and (max-width: 1550px)
+    #skills
+        gap: 0vh
+        .s-row
+            flex-direction: column
+            height: 40%
+            justify-content: center
+            .s-col
+                width: 40%
+                height: 40%
+                p
+                    font-size: 2em
+
+@media screen and (max-width: 1220px)
+    .hs-container
+        flex-direction: column
+
+@media screen and (max-width: 800px)
+    .softskill-list
+        ul
+            gap: 5vw
+        .part
+            li
+                font-size: 1.4em

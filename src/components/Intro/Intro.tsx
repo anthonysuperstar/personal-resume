@@ -38,7 +38,7 @@ export default function Intro(){
                 },
                 {
                     cat: "Beyond Coding",
-                    paragraph: "When I'm not coding, you can find me either on the basketball court or making music behind my synth."
+                    paragraph: "When I'm not coding, you can find me either on the basketball court or making music behind my synth feel free to have a look at my SoundCloud."
                 }
             ]
         }

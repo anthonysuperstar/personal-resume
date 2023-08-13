@@ -4,7 +4,6 @@ import Intro from './components/Intro/Intro';
 import Navbar from './components/Navbar/Navbar';
 import Portfolio from './components/Portfolio/Portfolio';
 import Skills from './components/Skills/Skills';
-import Anim from './components/Anim/Anim';
 import Welcome from './components/Welcome/Welcome';
 
 

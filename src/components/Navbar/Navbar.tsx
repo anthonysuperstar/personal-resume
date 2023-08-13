@@ -1,6 +1,8 @@
 import "./Navbar.sass"
 import { useState, useEffect } from "react"
 import { GrLinkedinOption } from 'react-icons/gr'
+import { FaSoundcloud } from 'react-icons/fa'
+import { BsGithub } from 'react-icons/bs'
 import { useDispatch, useSelector } from "react-redux"
 import { switchEn, switchFr } from "../../redux/features/languageSlice"
 import { Link } from "react-scroll"
@@ -85,10 +87,10 @@ export default function Navbar(){
     }
     
     const en_mapped = content.en.map((link) => {
-        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={500}>{link.name}</Link> 
+        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link> 
     })
     const fr_mapped = content.fr.map((link) => {
-        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={500}>{link.name}</Link>
+        return <Link className="na-li" to={link.link} spy={true} smooth={true} offset={0} duration={1000}>{link.name}</Link>
     })
 
     return (
@@ -107,11 +109,24 @@ export default function Navbar(){
                 </motion.div>
                 <nav className="nav">
                     {language==="en"? en_mapped : fr_mapped}
+                    <a className="na-li" href={process.env.PUBLIC_URL + 'resume/CV-billAnthony.pdf'} download>Get My Resume</a>
                 </nav>
-                <motion.footer whileHover={{rotate: 5, scale: 1.2}}>
-                    <a href="https://www.linkedin.com/in/anthony-mulamba/" target="_blank" rel="noreferrer">
-                        <GrLinkedinOption />
-                    </a>
+                <motion.footer>
+                    <motion.span whileHover={{rotate: 5, scale: 1.2}}>
+                        <a href="https://www.linkedin.com/in/anthony-mulamba/" target="_blank" rel="noreferrer">
+                            <GrLinkedinOption />
+                        </a>
+                    </motion.span>
+                    <motion.span whileHover={{rotate: 5, scale: 1.2}}>
+                        <a href="https://soundcloud.com/fication1" target="_blank" rel="noreferrer">
+                            <FaSoundcloud />
+                        </a>
+                    </motion.span>
+                    <motion.span whileHover={{rotate: 5, scale: 1.2}}>
+                        <a href="https://github.com/anthonysuperstar" target="_blank" rel="noreferrer">
+                            <BsGithub />
+                        </a>
+                    </motion.span>
                 </motion.footer>
             </div>
         </>
