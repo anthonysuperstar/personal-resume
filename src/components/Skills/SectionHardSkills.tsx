@@ -41,8 +41,8 @@ export default function SectionHardSkills(){
         [
             new Tech("Python", 80),
             new Tech("Django", 80),
-            new Tech("Shell Scripting", 60),
             new Tech("PHP", 50),
+            new Tech("Shell Scripting", 60),
         ]
     ]
 

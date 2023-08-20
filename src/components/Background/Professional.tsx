@@ -13,7 +13,7 @@ export default function Professional(){
             <div className="ss-prev" onClick={backToDefault}>
                 <FcPrevious />
             </div>
-            <h1>PROFESSIONAL</h1>
+            <h1>Coming Soon</h1>
         </section>
     )
 }
