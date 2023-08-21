@@ -15,7 +15,7 @@
     display: flex
     justify-content: center
     align-items: center
-    width: 30%
+    width: 40%
     height: 75%
     cursor: pointer
     border: 5px solid white
@@ -84,18 +84,18 @@
     cursor: pointer
     z-index: 5
 
-@media screen and (max-width: 1550px)
-    #skills
-        gap: 0vh
-        .s-row
-            flex-direction: column
-            height: 40%
-            justify-content: center
-            .s-col
-                width: 40%
-                height: 40%
-                p
-                    font-size: 2em
+// @media screen and (max-width: 1550px)
+//     #skills
+//         gap: 0vh
+//         .s-row
+//             flex-direction: column
+//             height: 40%
+//             justify-content: center
+//             .s-col
+//                 width: 40%
+//                 height: 40%
+//                 p
+//                     font-size: 2em
 
 @media screen and (max-width: 1220px)
     .hs-container
@@ -111,10 +111,20 @@
 @media screen and (max-width: 430px)
     #skills
         .s-row
+            .s-col
+                p
+                    font-size: 3rem
+        .s-row:first-child
+            flex-direction: column
             height: 60%
             .s-col
-                width: 80%
-                height: 60%
+                width: 300px
+                height: 300px
+        .s-row:last-child
+            height: 60%
+            .s-col
+                width: 300px
+                height: 300px
     .softskill-list
         ul
             flex-direction: column
